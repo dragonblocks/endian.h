@@ -22,7 +22,9 @@
 
 #if defined(__linux__) || defined(__CYGWIN__)
 
+#	undef PORTABLE_ENDIAN_H__
 #	include_next <endian.h>
+#	define PORTABLE_ENDIAN_H__
 
 #elif defined(__APPLE__)
 
